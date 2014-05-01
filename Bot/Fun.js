@@ -1136,30 +1136,30 @@ function chatMe(msg)
                         }
                         break;
                        
-                    case "catfact":
+                    case "wired":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomCatfact = Math.floor(Math.random() * Funbot.misc.catfact.length);
+                            var randomWired = Math.floor(Math.random() * Funbot.misc.wired.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomWired]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomWired]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomCatfact = Math.floor(Math.random() * Funbot.misc.catfact.length);
+                            var randomWired = Math.floor(Math.random() * Funbot.misc.wired.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomWired]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomWired]);
                                     break;
                            }
                         }
