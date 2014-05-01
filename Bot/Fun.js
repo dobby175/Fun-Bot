@@ -99,7 +99,7 @@ var blockedArtists = [
 
 // Filter Keywords
 Funbot.filters.beggerWords = ["fanme","fan me","fan4fan","fan 4 fan","fan pls","fans please","more fan","fan back","give me fans","gimme fans","need fan","fan for fan"];
-Funbot.filters.commandWords = [".linkin",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
+Funbot.filters.commandWords = [".linkin",".whoareyou",".wired",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
 
 
 // Fun misc
@@ -141,86 +141,24 @@ Funbot.misc.roll2 = [
 "5. Awesome!",
 "6. Awesome!"];
  
-Funbot.misc.catfact = [
-"Cats have five toes on each front paw, but only four toes on each back paw.",
-"Cats have true fur, in that they have both an undercoat and an outer coat.",
-"Newborn kittens have closed ear canals that don''t begin to open for nine days.When the eyes open, they are always blue at first. They change color over a period of months to the final eye color.",
-"Most cats have no eyelashes.","A cat cannot see directly under its nose.",
-"You can tell a cat's mood by looking into its eyes. A frightened or excited cat will have large, round pupils. An angry cat will have narrow pupils. The pupil size is related as much to the cat's emotions as to the degree of light.",
-"It is a common belief that cats are color blind. However, recent studies have shown that cats can see blue, green and red.",
-"A cat can jump even seven times as high as it is tall.",
-"The cat's footpads absorb the shocks of the landing when the cat jumps.",
-"A cat is pregnant for about 58-65 days.",
-"When well treated, a cat can live twenty or more years but the average life span of a domestic cat is 14 years.",
-"Neutering a cat extends its life span by two or three years.",
-"Cats can't taste sweets.",
-"Cats must have fat in their diet because they can't produce it on their own.",
-"Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.",
-"Tylenol and chocolate are both poisonous to cats.",
-"Many cats cannot properly digest cow's milk.",
-"The average cat food meal is the equivalent to about five mice.",
-"Cats have AB blood groups just like people.",
-"The color of the points in Siamese cats is heat related. Cool areas are darker.",
-"The chlorine in fresh tap water irritates sensitive parts of the cat's nose. Let tap water sit for 24 hours before giving it to a cat.",
-"Today there are about 100 distinct breeds of the domestic cat.",
-"The first cat show was in 1871 at the Crystal Palace in London.",
-"In ancient Egypt, mummies were made of cats, and embalmed mice were placed with them in their tombs. In one ancient city, over 300,000 cat mummies were found.",
-"In ancient Egypt, killing a cat was a crime punishable by death.",
-"The ancestor of all domestic cats is the African Wild Cat which still exists today.",
-"Cats do not think that they are little people. They think that we are big cats. This influences their behavior in many ways.",
-"Abraham Lincoln loved cats. He had four of them while he lived in the White House.",
-"Julius Caesar, Henri II, Charles XI, and Napoleon were all afraid of cats.",
-"Cats have an average of 24 whiskers, arranged in four horizontal rows on each side.",
-"Almost 10% of a cat's bones are in its tail, and the tail is used to maintain balance.",
-"Jaguars are the only big cats that don't roar.",
-"A cat's field of vision is about 185 degrees.",
-"The Maine Coon is 4 to 5 times larger than the Cingapura, the smallest breed of cat.",
-"Retractable claws are a physical phenomenon that sets cats apart from the rest of the animal kingdom. In the cat family, only cheetahs cannot retract their claws.",
-"A cat can sprint at about thirty-one miles per hour.",
-"A cat can spend five or more hours a day grooming themselves.",
-"The cat has been living in close association with humans for somewhere between 3,500 and 8,000 years.",
-"The domestic house cat is a small carnivorous mammal. Its most immediate ancestor is believed to be the African wild cat.",
-"Cats usually weigh between 2.5 and 7 kg (5.5–16 pounds), although some breeds can exceed 11.3 kg (25 pounds).",
-"Domestic cats tend to live longer if they are not permitted to go outdoors.",
-"Cats, in some cases, can sleep as much as 20 hours in a 24-hour period. The term cat nap refers to the cat's ability to fall asleep (lightly) for a brief period.",
-"Cats dislike citrus scent.",
-"A cat''s tongue has tiny barbs on it.",
-"Cats can be right-pawed or left-pawed.",
-"It has been scientifically proven that stroking a cat can lower one's blood pressure.",
-"Six-toed kittens are so common in Boston and surrounding areas of Massachusetts that experts consider it an established mutation.",
-"Cat families usually play best in even numbers. Cats and kittens should be acquired in pairs whenever possible."];
+Funbot.misc.plugins = [
+"PluggedN = http://goo.gl/1CcymS"]; 
  
-Funbot.misc.dogfact = [
-"Three dogs (from First Class cabins!) survived the sinking of the Titanic – two Pomeranians and one Pekingese.",
-"It’s rumored that, at the end of the Beatles song, “A Day in the Life,” Paul McCartney recorded an ultrasonic whistle, audible only to dogs, just for his Shetland sheepdog.",
-"Puppies have 28 teeth and normal adult dogs have 42.",
-"Dogs chase their tails for a variety of reasons: curiosity, exercise, anxiety, predatory instinct or, they might have fleas! If your dog is chasing his tail excessively, talk with your vet.",
-"Dalmatian puppies are pure white when they are born and develop their spots as they grow older.",
-"Dogs and humans have the same type of slow wave sleep (SWS) and rapid eye movement (REM) and during this REM stage dogs can dream. The twitching and paw movements that occur during their sleep are signs that your pet is dreaming",
-"Dogs’ eyes contain a special membrane, called the tapetum lucidum, which allows them to see in the dark.",
-"A large breed dog’s resting heart beats between 60 and 100 times per minute, and a small dog breed’s heart beats between 100-140. Comparatively, a resting human heart beats 60-100 times per minute.",
-"According to a Petside.com - Press poll, 72% of dog owners believe their dog can detect when stormy weather is on the way.",
-"A dog’s normal temperature is between 101 and 102.5 degrees Fahrenheit.",
-"Unlike humans who sweat everywhere, dogs only sweat through the pads of their feet.",
-"Dogs have three eyelids, an upper lid, a lower lid and the third lid, called a nictitating membrane or “haw,” which helps keep the eye moist and protected.",
-"Americans love dogs! 62% of U.S. households own a pet, which equates to 72.9 million homes",
-"45% of dogs sleep in their owner’s bed (we’re pretty sure a large percentage also hogs the blankets!)",
-"Why are dogs’ noses so wet? Dogs’ noses secrete a thin layer of mucous that helps them absorb scent. They then lick their noses to sample the scent through their mouth.",
-"Dogs have about 1,700 taste buds. Humans have approximately 9,000 and cats have around 473.",
-"A Dog’s sense of smell is 10,000 – 100,000 times more acute as that of humans.",
-"It’s a myth that dogs only see in black and white. In fact, it’s believed that dogs see primarily in blue, greenish-yellow, yellow and various shades of gray.",
-"Sound frequency is measured in Hertz (Hz). The higher the Hertz, the higher-pitched the sound. Dogs hear best at 8,000 Hz, while humans hear best at around 2,000 Hz.",
-"Dogs’ ears are extremely expressive. It’s no wonder! There are more than a dozen separate muscles that control a dog’s ear movements.",
-"While the Chow Chow dogs are well known for their distinctive blue-black tongues, they’re actually born with pink tongues. They turn blue-black at 8-10 weeks of age.",
-"When dogs kick after going to the bathroom, they are using the scent glands on their paws to further mark their territory.",
-"Dogs curl up in a ball when they sleep due to an age-old instinct to keep themselves warm and protect their abdomen and vital organs from predators.",
-"Dogs are capable of understanding up to 250 words and gestures, can count up to five and can perform simple mathematical calculations. The average dog is as intelligent as a two-year-old child.",
-"Some stray Russian dogs have figured out how to use the subway system in order to travel to more populated areas in search of food.",
-"Dogs don’t enjoy being hugged as much as humans and other primates.",
-"Two stray dogs in Afghanistan saved 50 American soliders. A Facebook group raised $21,000 to bring the dogs back to the US and reunite them with the soldiers.",
-"Service dogs are trained to know when they are on duty. When their harness is on, they know it’s business time. When you take it off, the pups immediately become playful and energetic.",
-"Tiger Woods stuttered as a child and used to talk to his dog until he fell asleep in an effort to get rid of it.",
-"Seeing eye dogs pee and poo on command so that their owners can clean up after them."];
+ Funbot.misc.wired = [
+ " If you can hear it, then it’s speaking to you. And if you can see it, then it’s yours to have.",
+ " No matter where you are... everyone is always connected.",
+ " There was no reason for me to stay in the real world any longer. In the real world, it didn't matter if I was there or not. When I realized that, I was no longer afraid of losing my body.",
+ " There is nothing easy about dying.",
+ " If you aren't remembered, then you never existed.",
+ " Beep, beep, beep, gah...",
+ " A netpal isn't really a friend; in fact, it shouldn't even be considered an acquaintance.",
+ " I feel so much better in the wired, join me ♥ :gun:",
+ " The wired might actually be thought of as a highly advanced upper layer of the real world. In other words, physical reality is nothing but an illusion, a hologram of the information that flows to us through the wired.",
+ " The body, physical motion, the activity of the human brain is merely a physical phenomenon, simply caused by synapses delivering electrical impulses.",
+ " The physical body exists at a less evolved plane only to verify one's existence in the universe."]; 
+ 
+ Funbot.misc.whoareyou = [
+" I am a sentient computer program in the form of a human body designed to sever the invisible barrier between the Wired and real worlds."];
  
 Funbot.misc.fortune = [
 " There is a true and sincere friendship between you and your friends.",
@@ -286,9 +224,9 @@ Funbot.misc.fortune = [
 " Your ability to juggle many tasks will take you far.",
 " A friend asks only for your time, not your money.",
 " When you look down, all you see is dirt, so keep looking up.",
-"If you are afraid to shake the dice, you will never throw a six.",
-"We can't help everyone. But everyone can help someone.",
-"Enjoyed the meal? Buy one to go too. :D",
+" If you are afraid to shake the dice, you will never throw a six.",
+" We can't help everyone. But everyone can help someone.",
+" Enjoyed the meal? Buy one to go too. :D",
 " You will be invited to an exciting event."];
  
  
@@ -474,7 +412,7 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             API.sendChat("@"+ data.from +" Pong!");
                             }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -482,7 +420,7 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             API.sendChat("@"+ data.from +" Polo!");
                             }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;        
                         
@@ -490,7 +428,7 @@ function chatMe(msg)
                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             Funbot.skip();
                         }else{
-                           API.sendChat("This command requires staff members only!");
+                           API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -498,7 +436,7 @@ function chatMe(msg)
                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(false);
                         }else{
-                           API.sendChat("This command requires staff members only!");
+                           API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -520,7 +458,7 @@ function chatMe(msg)
                             var userid = getUserID(username);
                             API.moderateBanUser(userid, 0, API.BAN.HOUR);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -530,7 +468,7 @@ function chatMe(msg)
                             var userid = getUserID(username);
                             API.moderateAddDJ(userid);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -540,7 +478,7 @@ function chatMe(msg)
                             var userid = getUserID(username);
                             API.moderateRemoveDJ(userid);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -548,7 +486,7 @@ function chatMe(msg)
                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(true);
                         }else{
-                           API.sendChat("This command requires staff members only!");
+                           API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;         
                         
@@ -558,7 +496,7 @@ function chatMe(msg)
                             setTimeout("Funbot.skip();", 100);
                             setTimeout("API.moderateLockWaitList(false);", 700);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                   
@@ -566,7 +504,7 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1 || typeof command[1] === "undefined"){
                            API.sendChat(command[1]);
                         }else{
-                         API.sendChat("This command requires staff members only!");
+                         API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                         
@@ -591,7 +529,7 @@ function chatMe(msg)
                             $(".icon-curate").click();
                             $($(".curate").children(".menu").children().children()[0]).mousedown();
                         }else{
-                         API.sendChat("This command requires staff members only!");
+                         API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
  
@@ -1015,7 +953,7 @@ function chatMe(msg)
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 6);
+                            var randomSentence = Math.floor(Math.random() * 7);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("/me rubs sandpaper on "+command[1]+"'s scrotum");
@@ -1030,7 +968,7 @@ function chatMe(msg)
                                     API.sendChat("/me makes "+command[1]+"'s mother cry");
                                     break;
                                 case 4:
-                                    API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
+                                    API.sendChat("/me slaps "+command[1]+"'s like a bitch");
                                     break;
                                 case 5:
                                     API.sendChat("/me gives "+command[1]+" a wet willy");
@@ -1038,10 +976,13 @@ function chatMe(msg)
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
                                     break;
+								case 7:
+                                    API.sendChat("/me Kicks "+command[1]+" in the dick");
+                                    break;	
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomSentence = Math.floor(Math.random() * 6);
+                            var randomSentence = Math.floor(Math.random() * 7);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("/me rubs sandpaper on "+command[1]+"'s scrotum");
@@ -1056,7 +997,7 @@ function chatMe(msg)
                                     API.sendChat("/me makes "+command[1]+"'s mother cry");
                                     break;
                                 case 4:
-                                    API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
+                                    API.sendChat("/me slaps "+command[1]+"'s like a bitch");
                                     break;
                                 case 5:
                                     API.sendChat("/me gives "+command[1]+" a wet willy");
@@ -1064,6 +1005,9 @@ function chatMe(msg)
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
                                     break;
+								case 7:
+                                    API.sendChat("/me Kicks "+command[1]+" in  the dick");
+                                    break;	
                             }
                         }
                         if(Funbot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
@@ -1244,7 +1188,7 @@ function chatMe(msg)
                          var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.NONE);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     
@@ -1254,7 +1198,7 @@ function chatMe(msg)
                          var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.RESIDENTDJ);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     case 'bouncer':
@@ -1263,7 +1207,7 @@ function chatMe(msg)
                         var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.BOUNCER);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     case 'manager':
@@ -1272,7 +1216,7 @@ function chatMe(msg)
                         var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.MANAGER);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     case 'cohost':
@@ -1281,7 +1225,7 @@ function chatMe(msg)
                         var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.COHOST);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     case 'host':
@@ -1290,7 +1234,7 @@ function chatMe(msg)
                         var userid = getUserID(username);
                             API.moderateSetRole(userid, API.ROLE.HOST);
                         }else{
-                            API.sendChat("This command requires staff members only!");
+                            API.sendChat("Master doesn't want you playing with that.");
                         }
                         break;
                     default:
@@ -1415,7 +1359,7 @@ function chatMe(msg)
         });
     }, 3000);
  
-    API.sendChat('Fun Bot version '+Funbot.misc.version+' Activated!');
+    API.sendChat('Presenting Lain Iwakura'+Funbot.misc.version+'♥♥♥♥♥♥♥♥');
    }else{
     alert("This bot can only function at http://plug.dj/community");
    };
