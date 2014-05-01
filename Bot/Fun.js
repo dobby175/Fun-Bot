@@ -72,7 +72,7 @@ Funbot.settings.ruleSkip = true;
 Funbot.settings.removedFilter = true;
 
 // Admins ID
-Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
+Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2","52b8fa3d3e083e7881f02321"];
 
 // Random announcements.
 var announcements = 
@@ -94,10 +94,6 @@ var blockedSongs = [
 // Keywords of blocked artist.
 var blockedArtists = [
 "Rick Astley",
-"Miley Cyrus",
-"Eduard Khil",
-"Justin Bieber",
-"Lil wayne",
 "Rebecca Black"
 ];
 
@@ -117,6 +113,7 @@ Funbot.misc.ball = [
 " [:8ball:] You may rely on it",
 " [:8ball:] As I see it yes",
 " [:8ball:] Most likely",
+" [:8ball:] No shit nigga",
 " [:8ball:] Outlook good",
 " [:8ball:] Yes",
 " [:8ball:] Signs point to yes :trollface:",
@@ -129,6 +126,7 @@ Funbot.misc.ball = [
 " [:8ball:] My reply is no",
 " [:8ball:] My sources say no",
 " [:8ball:] Outlook not so good",
+" [:8ball:] Fuck if i know",
 " [:8ball:] Very doubtful"];
 
 Funbot.misc.ht = ["My magic coins says: Tails", "My magic coin says: Heads"];
@@ -287,6 +285,10 @@ Funbot.misc.fortune = [
 " Your heart is a place to draw true happiness.",
 " Your ability to juggle many tasks will take you far.",
 " A friend asks only for your time, not your money.",
+" When you look down, all you see is dirt, so keep looking up.",
+"If you are afraid to shake the dice, you will never throw a six.",
+"We can't help everyone. But everyone can help someone.",
+"Enjoyed the meal? Buy one to go too. :D",
 " You will be invited to an exciting event."];
  
  
@@ -310,7 +312,7 @@ $('#woot').click();
  
 function UserJoin(user)
 {
-var JoinMsg = ["@user has joined!","welcome, @user!","Hey there, @user!","Glad you came by, @user"];
+var JoinMsg = ["@user Welcome to the VaporLounge","welcome, @user!","Hey there, @user!","Glad you came by, @user"];
 r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
