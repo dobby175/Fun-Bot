@@ -1359,7 +1359,7 @@ function chatMe(msg)
         });
     }, 3000);
  
-    API.sendChat('Presenting Lain Iwakura '+Funbot.misc.version+'');
+    API.sendChat('Presenting Lain Iwakura' +Funbot.misc.version+ ' :warning:  :warning:  :warning: ');
    }else{
     alert("This bot can only function at http://plug.dj/community");
    };
