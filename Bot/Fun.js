@@ -1103,30 +1103,30 @@ function chatMe(msg)
                         }
                         break;
  
-                 case "dogfact":
+                 case "whoareyou":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomDogfact = Math.floor(Math.random() * Funbot.misc.dogfact.length);
+                            var randomWhoareyou = Math.floor(Math.random() * Funbot.misc.whoareyou.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomWhoareyou]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomWhoareyou]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomDogfact = Math.floor(Math.random() * Funbot.misc.dogfact.length);
+                            var randomWhoareyou = Math.floor(Math.random() * Funbot.misc.whoareyou.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomdogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomWhoareyou]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomWhoareyou]);
                                     break;
                            }
                         }
