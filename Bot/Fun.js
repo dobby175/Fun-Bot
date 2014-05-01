@@ -99,7 +99,7 @@ var blockedArtists = [
 
 // Filter Keywords
 Funbot.filters.beggerWords = ["fanme","fan me","fan4fan","fan 4 fan","fan pls","fans please","more fan","fan back","give me fans","gimme fans","need fan","fan for fan"];
-Funbot.filters.commandWords = [".linkin",".whoareyou",".wired",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
+Funbot.filters.commandWords = [".linkin",".whoareyou",".wired",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".wired",".whoareyou",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
 
 
 // Fun misc
@@ -158,7 +158,9 @@ Funbot.misc.plugins = [
  " The physical body exists at a less evolved plane only to verify one's existence in the universe."]; 
  
  Funbot.misc.whoareyou = [
-" I am a sentient computer program in the form of a human body designed to sever the invisible barrier between the Wired and real worlds."];
+" I am a sentient computer program in the form of a human body designed to sever the invisible barrier between the Wired and real worlds."
+" I am a glitch in the system",
+" I am the Goddess of the Wired!"];
  
 Funbot.misc.fortune = [
 " There is a true and sincere friendship between you and your friends.",
@@ -1103,30 +1105,30 @@ function chatMe(msg)
                         }
                         break;
  
-                 case "dogfact":
+                 case "whoareyou":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomDogfact = Math.floor(Math.random() * Funbot.misc.dogfact.length);
+                            var randomwhoareyou = Math.floor(Math.random() * Funbot.misc.whoareyou.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomwhoareyou]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomwhoareyou]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomDogfact = Math.floor(Math.random() * Funbot.misc.dogfact.length);
+                            var randomwhoareyou = Math.floor(Math.random() * Funbot.misc.whoareyou.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomdogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomwhoareyou]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.whoareyou[randomwhoareyou]);
                                     break;
                            }
                         }
@@ -1136,30 +1138,30 @@ function chatMe(msg)
                         }
                         break;
                        
-                    case "catfact":
+                    case "wired":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomCatfact = Math.floor(Math.random() * Funbot.misc.catfact.length);
+                            var randomwired = Math.floor(Math.random() * Funbot.misc.wired.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomwired]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomwired]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomCatfact = Math.floor(Math.random() * Funbot.misc.catfact.length);
+                            var randomwired = Math.floor(Math.random() * Funbot.misc.wired.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomwired]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randomCatfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.wired[randomwired]);
                                     break;
                            }
                         }
