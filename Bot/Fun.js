@@ -131,6 +131,43 @@ Funbot.misc.ball = [
 
 Funbot.misc.ht = ["My magic coins says: Tails", "My magic coin says: Heads"];
 
+Funbot.misc.based = [
+"TYBG",
+"I got Bitches ~ Lil B",
+"When people see you have your foot in the door with what you love, everyone wants to be your friend. - Lil B",
+"I love your life and I love you being alive. - Lil B",
+"I'm not guna let anything take the love from my heart, the love of life and spreading peace and positive, thank you earth I'm alive. - Lil B",
+"My people, you gota think before you move, you gota speak before you cry, you gota live before you die. - Lil B",
+"She was like OWWW, I was like OWW, I am like GOD, call me Bot god! - Lil B",
+"20 on my dick because I look like Miss America. - Lil B",
+"Put money on god and bust on him. - Lil B",
+"I'm just robbing like baskins. - Lil B",
+"It's OK to cry. - Lil B",
+"Yeah drake I fuckin feel ya, I was in the hood while you were shopping at whole foods. -Lil B",
+"The mind is so complex when your based. 32 levels. Welcome to my world. - Lil B",
+"Dirty everythang. You can't be half ass dirty you gotta be all the way, ya feel me? - Lil B",
+"Hoes suck my dick, and my dick touch her brain. - Lil B",
+"I won't eat a girl out, but my lawyers will! - Lil B",
+"10 on my dick cuz I look like patrick ramsey. - Lil B",
+"Everybody say that I'm a young ass bitch til I caught my first case now I'm a thug ass bitch. - Lil B",
+"Roll with the piece beside him not talkin bout the gun, but the peace inside him. - Lil B",
+"Fucked the bitch in her ass and the pussy squirted milk. - Lil B",
+"Yeah the niqqa rap but do he got bitches? Young Baselord and I look like Jesus. -- Lil B",
+"I'm so wet I should be in the Navy. - Lil B",
+"I ain't got no car, but i be driving bitches. - Lil B",
+"Feel me I'm in this bitch , man lookin like heidi montag swaggin. - Lil B",
+"My white girl fuck me good, interracial datin. My black girl suck my dick and she on probation. - Lil B",
+"Swag like I'm marrow, in my bones. Swag in my bones. Bone Marrow Swag. - Lil B",
+"The only time I went to class was when I was serving a detention. - Lil B",
+"I'm really waterfront on a bitch! - Lil B",
+"Word around town bitch imma nasty neighbor. - Lil  B",
+"Bitches suck my dick cuz I look like a Frenchmen. - Lil B",
+"I'm doin it for the youth, tryna set the right example feel me. - Lil B",
+"Nut on her lips and in her ass thats a creampie. Oh my God creampie. - Lil B",
+"Picked up my bitches, most of them foreign, hoes suck my dick when my day gets boring. - Lil B",
+"Shouts out to Palo Alto, bruh bruh got grapes there. - Lil B"];
+
+
 Funbot.misc.roll = [
 "You rolled A 1. Bummer :(",
 "You rolled A 2. Bummer :(",
@@ -250,7 +287,7 @@ $('#woot').click();
  
 function UserJoin(user)
 {
-var JoinMsg = ["@user Welcome to the Wired","welcome, @user!","Hey there, @user!","Glad you came by, @user"];
+var JoinMsg = ["@user Welcome to the Wired","welcome, @user!","Hey there, @user!","Glad you came by, @user","Sup @user"];
 r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
@@ -736,7 +773,7 @@ function chatMe(msg)
                    case "authors":
                    case "creator":
                         if(Funbot.admins.indexOf(fromID) !== -1 || API.getUser(fromID).permission < 2){
-                           API.sendChat("This bot was created by: ๖ۣۜĐل - ɴᴇᴏɴ - TFL, And it's Copyrighted!");
+                           API.sendChat("This bot was created by: ๖ۣۜĐل - ɴᴇᴏɴ - TFL & Based Frequency, And it's Copyrighted!");
                         }
                         break;
                        
@@ -914,7 +951,40 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
- 
+					
+					case "based":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randombased = Math.floor(Math.random() * Funbot.misc.based.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.based[randombased]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.based[randombased]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randombased = Math.floor(Math.random() * Funbot.misc.based.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.based[randombased]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.based[randombased]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+					
                     case "flipcoin":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
@@ -1065,10 +1135,10 @@ function chatMe(msg)
                                     }, 650);
                                     break;
                                 case 1:
-                                    API.sendChat("/me gives @"+command[1]+" a big bear hug");
+                                    API.sendChat("/me gives @"+command[1]+" a big digital hug");
                                     break;
                                 case 2:
-                                    API.sendChat("/me gives @"+command[1]+" a soft, furry hug");
+                                    API.sendChat("/me gives @"+command[1]+" a soft, wired hug");
                                     break;
                                 case 3:
                                     API.sendChat("/me gives @"+command[1]+" an awkward hug");
@@ -1087,10 +1157,10 @@ function chatMe(msg)
                                     }, 650);
                                     break;
                                 case 1:
-                                    API.sendChat("/me gives @"+command[1]+" a big bear hug");
+                                    API.sendChat("/me gives @"+command[1]+" a big digital hug");
                                     break;
                                 case 2:
-                                    API.sendChat("/me gives @"+command[1]+" a soft, furry hug");
+                                    API.sendChat("/me gives @"+command[1]+" a soft, wired hug");
                                     break;
                                 case 3:
                                     API.sendChat("/me gives @"+command[1]+" an awkward hug");
@@ -1318,7 +1388,7 @@ function chatMe(msg)
                 }
         }
         if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye bot") !== -1 || msg.indexOf("bot bye") !== -1){
-        var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:"];
+        var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:","I will miss you"];
             API.sendChat("@" + data.from + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
         }
         if(msg.indexOf(':eyeroll:') > -1){
