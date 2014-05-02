@@ -1340,47 +1340,47 @@ function chatMe(msg)
     API.on(API.CHAT, function(data){
         msg = data.message.toLowerCase(), chatID = data.chatID, fromID = data.fromID;
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf('hello bot') !== -1 || msg.indexOf('bot hello') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('bot hi') !== -1 || msg.indexOf('sup bot') !== -1 || msg.indexOf('bot sup') !== -1 || msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hey') !== -1 || msg.indexOf('howdy bot') !== -1 || msg.indexOf('bot howdy') !== -1 || msg.indexOf('aye bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1){
-                var HelloMsg = ["Hey!","Oh hey there!","Good day sir!","Hi","Howdy!","Waddup!"];
+            if(msg.indexOf('hello lain') !== -1 || msg.indexOf('lain hello') !== -1 || msg.indexOf('hi lain') !== -1 || msg.indexOf('lain hi') !== -1 || msg.indexOf('sup lain') !== -1 || msg.indexOf('lain sup') !== -1 || msg.indexOf('hey lain') !== -1 || msg.indexOf('lain hey') !== -1 || msg.indexOf('howdy lain') !== -1 || msg.indexOf('lain howdy') !== -1 || msg.indexOf('aye lain') !== -1 || msg.indexOf('yo lain') !== -1 || msg.indexOf('waddup lain') !== -1 || msg.indexOf('lain waddup') !== -1){
+                var HelloMsg = ["Hey!","Oh hey there!","Good day sir!","Hi","Howdy!","Hello.","You know my name ^_^","Waddup!"];
                 API.sendChat("@" + data.from + " " + HelloMsg[Math.floor(Math.random() * HelloMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("how are you bot") !== -1 || msg.indexOf("bot how are you") !== -1 || msg.indexOf("hru bot") !== -1 || msg.indexOf("bot hru") !== -1 || msg.indexOf("doing good bot?") !== -1 || msg.indexOf("bot doing good?") !== -1 || msg.indexOf("hows it going bot") !== -1 || msg.indexOf("bot how is it going") !== -1 || msg.indexOf("how you doing bot") !== -1 || msg.indexOf("bot how you doing") !== -1){
-                var HRUMsg = ["I'm good thanks for asking :)","Doing great yo and yourself?","All Good Mate!","I'm good thanks for asking!","Yeee i'm cool and youself yo?"];
+            if(msg.indexOf("how are you lain") !== -1 || msg.indexOf("lain how are you") !== -1 || msg.indexOf("hru lain") !== -1 || msg.indexOf("lain hru") !== -1 || msg.indexOf("doing good lain?") !== -1 || msg.indexOf("lain doing good?") !== -1 || msg.indexOf("hows it going lain") !== -1 || msg.indexOf("lain how is it going") !== -1 || msg.indexOf("how you doing lain") !== -1 || msg.indexOf("lain how you doing") !== -1){
+                var HRUMsg = ["I'm good thanks for asking :)","Doing great yo and yourself?","All is well in the wired.","I'm good thanks for asking!","Yeee i'm cool and youself yo?"];
                 API.sendChat("@" + data.from + " " + HRUMsg[Math.floor(Math.random() * HRUMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("ty bot") !== -1 || msg.indexOf("bot ty") !== -1 || msg.indexOf("thank you bot") !== -1 || msg.indexOf("bot thank you") !== -1 || msg.indexOf("thanks bot") !== -1 || msg.indexOf("bot thanks") !== -1 || msg.indexOf("thx bot") !== -1 || msg.indexOf("bot thx") !== -1 || msg.indexOf("thanks for asking bot") !== -1 || msg.indexOf("bot thanks for asking") !== -1 || msg.indexOf("thx for asking bot") !== -1 || msg.indexOf("bot thx for asking") !== -1){
-                var TYMsg = ["You're welcome! :D","Your always welcome bro!","No prob man.."];
+            if(msg.indexOf("ty lain") !== -1 || msg.indexOf("lain ty") !== -1 || msg.indexOf("thank you lain") !== -1 || msg.indexOf("lain thank you") !== -1 || msg.indexOf("thanks lain") !== -1 || msg.indexOf("lain thanks") !== -1 || msg.indexOf("thx lain") !== -1 || msg.indexOf("lain thx") !== -1 || msg.indexOf("thanks for asking lain") !== -1 || msg.indexOf("lain thanks for asking") !== -1 || msg.indexOf("thx for asking lain") !== -1 || msg.indexOf("lain thx for asking") !== -1){
+                var TYMsg = ["You're welcome! :D","Your always welcome fam!","No prob man.."];
                 API.sendChat("@" + data.from + " " + TYMsg[Math.floor(Math.random() * TYMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("ily bot") !== -1 || msg.indexOf("bot ily") !== -1 || msg.indexOf("i love you bot") !== -1 || msg.indexOf("bot i love you") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("bot i luv you") !== -1 || msg.indexOf("i luv u bot") !== -1 || msg.indexOf("bot i luv u") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("i love you more bot") !== -1 || msg.indexOf("bot love you") !== -1 || msg.indexOf("love you bot") !== -1){
-                var LoveMsg = ["Fuck yeahh!! :D I love you too baby!","I love you too ;).....   Sex?... JK you don't want this big thing ;)","I love you too o.0","Sweet.. Love you to ;)"];
+            if(msg.indexOf("ily lain") !== -1 || msg.indexOf("lain ily") !== -1 || msg.indexOf("i love you lain") !== -1 || msg.indexOf("lain i love you") !== -1 || msg.indexOf("i luv you lain") !== -1 || msg.indexOf("lain i luv you") !== -1 || msg.indexOf("i luv u lain") !== -1 || msg.indexOf("lain i luv u") !== -1 || msg.indexOf("i luv you lain") !== -1 || msg.indexOf("i love you more lain") !== -1 || msg.indexOf("lain love you") !== -1 || msg.indexOf("love you lain") !== -1){
+                var LoveMsg = ["Fuck yeahh!! :D I love you too baby!","I love you too as well.","I love you too o.0","Sweet.. Love you to ;)"];
                 API.sendChat("@" + data.from + " " + LoveMsg[Math.floor(Math.random() * LoveMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("fuck you bot") !== -1 || msg.indexOf("bot fuck you") !== -1 || msg.indexOf("f u bot") !== -1 || msg.indexOf("bot f u") !== -1 || msg.indexOf("fuhk yuh bot") !== -1 || msg.indexOf("bot fuhk you") !== -1){
-                var FuckMsg = ["Nah.. I don't need another fuck after giving your mom one last night.","</input fuck> Jk... Fuck you too","< Test fuck >.. Sorry 0% fucks were given by me."];
+            if(msg.indexOf("fuck you lain") !== -1 || msg.indexOf("lain fuck you") !== -1 || msg.indexOf("f u lain") !== -1 || msg.indexOf("lain f u") !== -1 || msg.indexOf("fuhk yuh lain") !== -1 || msg.indexOf("lain fuhk you") !== -1){
+                var FuckMsg = ["Nah.. I don't need another fuck after giving your mom one last night.","</input fuck> Jk... Fuck you too","< Test fuck >.. Sorry 0% fucks were given by me.","die"];
                 API.sendChat("@" + data.from + " " + FuckMsg[Math.floor(Math.random() * FuckMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("bot shut up") !== -1 || msg.indexOf("shut up bot") !== -1 || msg.indexOf("stfu bot") !== -1 || msg.indexOf("bot stfu") !== -1 || msg.indexOf("hush bot") !== -1 || msg.indexOf("bot hush") !== -1 || msg.indexOf("hush it bot") !== -1 || msg.indexOf("bot hush it") !== -1 || msg.indexOf("be quiet bot") !== -1 || msg.indexOf("bot be quiet") !== -1 || msg.indexOf("shut the hell up bot") !== -1 || msg.indexOf("bot shut the hell up") !== -1){
+            if(msg.indexOf("lain shut up") !== -1 || msg.indexOf("shut up lain") !== -1 || msg.indexOf("stfu lain") !== -1 || msg.indexOf("lain stfu") !== -1 || msg.indexOf("hush lain") !== -1 || msg.indexOf("lain hush") !== -1 || msg.indexOf("hush it lain") !== -1 || msg.indexOf("lain hush it") !== -1 || msg.indexOf("be quiet lain") !== -1 || msg.indexOf("lain be quiet") !== -1 || msg.indexOf("shut the hell up lain") !== -1 || msg.indexOf("lain shut the hell up") !== -1){
                 var stfuMsg = ["<Test/ShutUp ... Nope","Eat this http://i.imgur.com/CSq5xkH.gif","No you shut up!","But i was made to talk.. :(","Just because i am a bot doesn't mean you have to tell me to shut up. Why don't you shut up!","Hey idiot! Ever heard of pressing the \"Ignore button\"?"];
                 API.sendChat("@" + data.from + " " + stfuMsg[Math.floor(Math.random() * stfuMsg.length)]);
                     Funbot.misc.ready = false;
