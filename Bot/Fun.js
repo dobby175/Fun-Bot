@@ -50,7 +50,7 @@ toSave.moderators = Funbot.moderators;
  
 Funbot.misc.version = "http://s26.postimg.org/57j7bjivd/tumblr_mtoqg6_T9_WE1r2x4nco1_500.gif";
 Funbot.misc.ready = true;
-var songBoundary = 60 * 10;
+var songBoundary = 60 * 60;
 var announcementTick = 60 * 10;
 var lastAnnouncement = 0;
 
@@ -61,7 +61,7 @@ Funbot.filters.beggerWords = new Array();
 Funbot.filters.commandWords = new Array();
 
 // Bot's settings
-Funbot.settings.songLimit = 10;
+Funbot.settings.songLimit = 60;
 Funbot.settings.cooldown = 10; 
 Funbot.settings.staffMeansAccess = true;
 Funbot.settings.historyFilter = true;
@@ -1394,8 +1394,8 @@ function chatMe(msg)
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
-        if(msg.indexOf("i got to go") !== -1 || msg.indexOf("peace") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye lain") !== -1 || msg.indexOf("lain bye") !== -1 || msg.indexOf("ttyl") !== -1{
-        var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:","I will miss you","http://puu.sh/89cj7.gif"];
+        if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye lain") !== -1 || msg.indexOf("lain bye") !== -1 || msg.indexOf("ttyl") !== -1{
+        var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:","I will miss you"];
             API.sendChat("@" + data.from + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
         }
         if(msg.indexOf(':eyeroll:') > -1){
