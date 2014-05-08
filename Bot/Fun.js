@@ -50,7 +50,7 @@ toSave.moderators = Funbot.moderators;
  
 Funbot.misc.version = "http://s26.postimg.org/57j7bjivd/tumblr_mtoqg6_T9_WE1r2x4nco1_500.gif";
 Funbot.misc.ready = true;
-var songBoundary = 60 * 60;
+var songBoundary = 60 * 10;
 var announcementTick = 60 * 10;
 var lastAnnouncement = 0;
 
@@ -61,7 +61,7 @@ Funbot.filters.beggerWords = new Array();
 Funbot.filters.commandWords = new Array();
 
 // Bot's settings
-Funbot.settings.songLimit = 60;
+Funbot.settings.songLimit = 10;
 Funbot.settings.cooldown = 10; 
 Funbot.settings.staffMeansAccess = true;
 Funbot.settings.historyFilter = true;
