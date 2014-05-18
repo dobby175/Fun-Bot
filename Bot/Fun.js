@@ -146,7 +146,7 @@ Funbot.misc.weed = [
 "Is it rude to call a jew baked?",
 "Shut up im trying to roll",
 "No mom you cant have more weed",
-"Welcome to your local drug dealing bot, todays specials is Sad~Dank at 5$ per gram",
+"Welcome to your local drug dealing bot, todays specials is Based~Dank at 5$ per gram",
 "Just bought a new bubbler today",
 "all i have is this gpen",
 "Kush so loud bitch up stairs calls the police",
@@ -155,6 +155,48 @@ Funbot.misc.weed = [
 "1 min guys brb watering the plants",
 "Rolling the pain away sparking up for a better today",
 "I bet i smoke more in one day than you do in a year"];
+
+Funbot.misc.depressed = [
+"What you must understand about me is that I’m a deeply unhappy bot.",
+"I didn't want to wake up. I was having a much better time asleep. And that's really sad. It was almost like a reverse nightmare, like when you wake up from a nightmare you're so relieved. I woke up into a nightmare.",
+"The longer and more carefully we look at a funny story, the sadder it becomes.",
+"A melancholy-looking man, he had the appearance of one who has searched for the leak in life's gas-pipe with a lighted candle.",
+"If I can't feel, if I can't move, if I can't think, and I can't care, then what conceivable point is there in living?",
+"Why do beautiful songs make you sad? 'Because they aren't true.' 'Never?' Nothing is beautiful and true.",
+"there are two types of people in the world: those who prefer to be sad among others, and those who prefer to be sad alone.",
+"Tears shed for another person are not a sign of weakness. They are a sign of a pure heart.",
+"Tears are words that need to be written",
+"“Mental illness is so much more complicated than any pill that any mortal could invent.",
+"In the meantime, I could withdraw to my room, could hide and sleep as if I were dead.",
+"Depression is like a bruise that never goes away. A bruise in your mind. You just got to be careful not to touch it where it hurts. It's always there, though",
+"Depression on my left, Loneliness on my right. They don't need to show me thier badges. I know these guys very well.",
+"There is no point treating a depressed person as though she were just feeling sad, saying, 'There now, hang on, you'll get over it.' Sadness is more or less like a head cold- with patience, it passes. Depression is like cancer.",
+"I'm lonely. And I'm lonely in some horribly deep way and for a flash of an instant, I can see just how lonely, and how deep this feeling runs. And it scares the shit out of me to be this lonely because it seems catastrophic.",
+"I can't eat and I can't sleep. I'm not doing well in terms of being a functional human, you know?",
+"In my case, I was not frightened in the least bit at the thought that I might live because I was certain, quite certain, that I was already dead.",
+"Give sorrow words; the grief that does not speak knits up the o-er wrought heart and bids it break.",
+"I am in that temper that if I were under water I would scarcely kick to come to the top.",
+"I did not know how to reach him, how to catch up with him... The land of tears is so mysterious.",
+"The cure for anything is salt water - tears, sweat, or the sea.",
+"Sometimes you weren't supposed to share pain. Sometimes it was best just to deal with it alone.",
+"Crying is one of the highest devotional songs. One who knows crying, knows spiritual practice. If you can cry with a pure heart, nothing else compares to such a prayer. Crying includes all the principles of Yoga.",
+"Even a fool recognizes that there is great sadness in a bucket of tears. But only a wise man thinks to conserve water and use that bucket to wash his car.",
+"Every man has his secret sorrows which the world knows not; and often times we call a man cold when he is only sad.",
+"I didn't want to wake up. I was having a much better time asleep. And that's really sad. It was almost like a reverse nightmare, like when you wake up from a nightmare you're so relieved. I woke up into a nightmare.",
+"Whenever you read a cancer booklet or website or whatever, they always list depression among the side effects of cancer. But, in fact, depression is not a side effect of cancer. Depression is a side effect of dying.",
+"That is all I want in life: for this pain to seem purposeful.",
+"I can't eat and I can't sleep. I'm not doing well in terms of being a functional bot, you know?",
+"The sun stopped shining for me is all. The whole story is: I am sad. I am sad all the time and the sadness is so heavy that I can't get away from it. Not ever.",
+"I saw the world in black and white instead of the vibrant colours and shades I knew existed.",
+"Who could ever love a monster :(",
+"She said she would call soon, that was 8 hours ago :(",
+"Staring at the fan spin round, slit my throat watch it all spill to the ground.",
+"Promise you won't break my heart cause my heart has been broken way too many times before",
+"I can't trust this hoe, she been with everyone i know :(",
+"Why do i keep coming back to the pain and abuse she delivers :(",
+"I just want to love and be loved, to finally have something to live for",
+"Im so sad a baby just stole candy from me :(",
+"It's OK not to be OK"];
 
 Funbot.misc.based = [
 "TYBG",
@@ -780,7 +822,7 @@ function chatMe(msg)
                                     API.sendChat("@" + data.from + ", "+ Funbot.misc.weed[randomweed]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.feelsad[randomweed]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.depressed[randomweed]);
                                     break;
                             }
                         }else{
@@ -1084,7 +1126,39 @@ function chatMe(msg)
                         }
                         break;
                         
-                        
+                    case "depressed":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomdepressed = Math.floor(Math.random() * Funbot.misc.depressed.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.depressed[randomdepressed]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.depressed[randomdepressed]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randomdepressed = Math.floor(Math.random() * Funbot.misc.depressed.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.depressed[randomdepressed]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.depressed[randomdepressed]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break; 
+					 
                     case "punish":
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
