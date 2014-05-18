@@ -131,6 +131,31 @@ Funbot.misc.ball = [
 
 Funbot.misc.ht = ["My magic coins says: Tails", "My magic coin says: Heads"];
 
+Funbot.misc.weed = [
+"Bout to slide into a kuch coma!",
+"Puff Puff Pass",
+"Just finished the joint!",
+"Fuck this blunt is fat",
+"Back off this shit is mine",
+"This bowl will put us to sleep",
+"Dab or Die",
+"I have to smoke every hour or i stop functioning",
+"This shit is loud af!",
+"Ill pass the bong to you after i finish the bowl in 1hit",
+"faded nigga",
+"Is it rude to call a jew baked?",
+"Shut up im trying to roll",
+"No mom you cant have more weed",
+"Welcome to your local drug dealing bot, todays specials is Sad~Dank at 5$ per gram",
+"Just bought a new bubbler today",
+"all i have is this gpen",
+"Kush so loud bitch up stairs calls the police",
+"15$ little man put that shit in my had",
+"Used to only smoke a gram a week, now we destroy that OZ as soon as the odor leaks",
+"1 min guys brb watering the plants",
+"Rolling the pain away sparking up for a better today",
+"I bet i smoke more in one day than you do in a year"];
+
 Funbot.misc.based = [
 "TYBG",
 "I got Bitches ~ Lil B",
@@ -738,6 +763,40 @@ function chatMe(msg)
                             API.sendChat("Reserve Mehs for songs that are a) extremely overplayed b) off genre c) absolutely god awful or d) troll songs. ");
                         }
                         if(Funbot.admins.indexOf(fromID) > -1 || API.getUser(fromID).permission < 2){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+						
+						
+					case "weed":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomweed = Math.floor(Math.random() * Funbot.misc.weed.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.weed[randomweed]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.feelsad[randomweed]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randomweed = Math.floor(Math.random() * Funbot.misc.weed.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.weed[randomweed]);
+                                    break;
+                                case 1:
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.weed[randomweed]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
