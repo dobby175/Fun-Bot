@@ -88,13 +88,13 @@ var blockedSongs = [
 "Trololo",
 "#SELFIE (Official Music Video)",
 "Heyayayay",
-"Rap God"
+"Rap God",
 ];
 
 // Keywords of blocked artist.
 var blockedArtists = [
-"Rick Astley",
-"Rebecca Black"
+"avicci",
+"skrillex",
 ];
 
 // Filter Keywords
