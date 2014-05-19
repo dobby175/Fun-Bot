@@ -96,6 +96,7 @@ var blockedArtists = [
 "avicci",
 "skrillex",
 "ＪＯＵＲＮＡＬＩＳＴ ",
+"Tha TriLL JournalisT",
 ];
 
 // Filter Keywords
