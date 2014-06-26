@@ -48,7 +48,7 @@ toSave = {};
 toSave.settings = Funbot.settings;
 toSave.moderators = Funbot.moderators;
  
-Funbot.misc.version = "http://s26.postimg.org/57j7bjivd/tumblr_mtoqg6_T9_WE1r2x4nco1_500.gif";
+Funbot.misc.version = "1";
 Funbot.misc.ready = true;
 var songBoundary = 60 * 10;
 var announcementTick = 60 * 10;
@@ -95,8 +95,6 @@ var blockedSongs = [
 var blockedArtists = [
 "avicci",
 "skrillex",
-"ＪＯＵＲＮＡＬＩＳＴ ",
-"Tha TriLL JournalisT",
 ];
 
 // Filter Keywords
