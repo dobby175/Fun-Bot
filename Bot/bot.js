@@ -35,7 +35,7 @@
 //                                              ====== FUN BOT SCRIPT  ======
 
 
-var Funbot = {};
+var Funbot = {http://s26.postimg.org/57j7bjivd/tumblr_mtoqg6_T9_WE1r2x4nco1_500.gif};
 var ruleSkip = {};
 Funbot.misc = {};
 Funbot.settings = {};
